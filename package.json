@@ -1,0 +1,13 @@
+{
+  "name": "preflight-checklist",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "dependencies": {
+    "live-server": "^1.2.0",
+    "material-design-lite": "^1.3.0"
+  },
+  "scripts": {
+    "start": "live-server --port=8083"
+  }
+}

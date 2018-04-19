@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <script type="module">
+      import Checklist from "./src/checklist.js";
+      customElements.define("flight-checklist", Checklist);
+      import ChecklistItem from "./src/checklist-item.js";
+      customElements.define("checklist-item", ChecklistItem);
+    </script>
+  </head>
+  <body>
+    <flight-checklist>
+      <span slot="checklist-name">Walk around</span>
+      <checklist-item>Left wheel</checklist-item>
+      <checklist-item>Empennage</checklist-item>
+      <checklist-item>Tail</checklist-item>
+      <checklist-item>Right wheel</checklist-item>
+      <checklist-item>Right wing</checklist-item>
+      <checklist-item>Oil</checklist-item>
+      <checklist-item>Propeller</checklist-item>
+      <checklist-item>Nose wheel</checklist-item>
+    </flight-checklist>
+
+  </body>
+</html>
